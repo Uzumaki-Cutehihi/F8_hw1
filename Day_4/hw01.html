@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h1>
+            Form đăng ký tài khoản
+        </h1>
+        <div>
+            <label for="id_fullname">Họ tên:</label>
+            <input type="text" name="fullname" id="id_fullname" />
+        </div>
+        <div>
+            <label for="id_mail">Email:</label>
+            <input type="email" name="mail" id="id_mail" />
+        </div>
+        <div>
+            <label for="id_pass">Mật khẩu:</label>
+            <input type="password" name="pass" id="id_pass" />
+        </div>
+        <div>
+            <label for="id_birthDate">Ngày sinh:</label>
+            <input type="date" name="birthDate" id="id_birthDate" />
+        </div>
+        <div>
+            <label>Giới tính:
+                <label for="id_male"><input type="radio" name="gender" id="id_male" value="Nam" />Nam</label>
+                <label for="id_female"><input type="radio" name="gender" id="id_female" value="Nữ" />Nữ</label>
+                <label for="id_other"><input type="radio" name="gender" id="id_other" value="Khác" />Khác</label>
+            </label>
+        </div>
+        <div>
+            <label>
+                Sở thích:
+                <label for="id_bookHobby"><input type="checkbox" name="hobby" id="id_bookHobby" value="Đọc sách" />Đọc
+                    sách</label>
+                <label for="id_travelHobby"><input type="checkbox" name="hobby" id="id_travelHobby" value="Du lịch" />Du
+                    lịch</label>
+                <label for="id_sportHobby"><input type="checkbox" name="hobby" id="id_sportHobby" value="Thể thao" />Thể
+                    thao</label>
+            </label>
+        </div>
+        <div>
+            <label for="id_description">Mô tả bản thân:</label>
+            <br />
+            <textarea id="id_description" name="description" rows="6" cols="50"></textarea>
+        </div>
+        <div>
+            <button type="submit" name="signUp" id="id_signUpBtn">Đăng ký</button>
+            <button type="reset" name="deleteBtn" id="id_deleteBtn">Xoá</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

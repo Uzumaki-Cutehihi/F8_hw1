@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Form đặt hàng sản phẩm
+    </h1>
+    <form action="#">
+        <!-- Thẻ fieldset dùng làm thẻ bọc đường viền/ Thẻ legend giúp định dạng tittle nội dung được bọc -->
+        <fieldset>
+            <legend>Thông tin đơn hàng</legend>
+            <div>
+                <label>Tên sản phẩm:
+                    <select name="phone">
+                        <option value="Iphone 11">iPhone 11</option>
+                        <option value="Iphone 12">iPhone 12</option>
+                        <option value="Iphone 13">iPhone 13</option>
+                        <option value="Iphone 14">iPhone 14</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="id_count">Số lượng:<input type="text" name="count" id="id_count" size="5" /></label>
+            </div>
+            <div>
+                <label for="id_fileUpload">Upload ảnh thanh toán: <input type="file" id="id_fileUpload"
+                        name="file" /></label>
+            </div>
+        </fieldset>
+
+        <button type="submit" id="id_orderBtn" name="orderBtn">Đặt hàng</button>
+    </form>
+</body>
+
+</html>

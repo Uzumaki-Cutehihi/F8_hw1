@@ -1,0 +1,13 @@
+.gray-box{
+    background-color: grey;
+    padding: 20px;
+}
+.yellow-button{
+    background-color: yellow;
+    padding: 1px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+

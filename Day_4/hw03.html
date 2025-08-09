@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form khảo sát ý kiến</h1>
+    <form action="#">
+        <div>
+            <label>
+                Họ tên: <input type="text" name="fullname" />
+            </label>
+        </div>
+        <div>
+            <label>
+                Mức độ hài lòng:
+                <input type="range" name="rating" min="0" max="10" value="5">
+            </label>
+        </div>
+        <div>
+            <label>
+                Thời gian liên hệ:
+                <input type="time" name="timeContact" />
+            </label>
+        </div>
+        <div>
+            <label>
+                Kênh thông tin:
+                <label><input type="radio" value="Facebook" name="informationChannel">Facebook</label>
+                <label><input type="radio" value="Youtube" name="informationChannel">Youtube</label>
+                <label><input type="radio" value="Website" name="informationChannel">Website</label>
+        </div>
+        <div>
+            <label>
+                Góp ý khác:
+                <br />
+                <textarea name="description" rows="3" cols="35"></textarea>
+            </label>
+        </div>
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+
+</html>

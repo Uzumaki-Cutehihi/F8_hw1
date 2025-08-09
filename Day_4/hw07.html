@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <th colspan="2">ĐĂNG KÝ</th>
+        </tr>
+        <tr>
+            <td>
+                <label for="id_fullname">Full name</label>
+            </td>
+            <td>
+                <input type="text" name="fullname" id="id_fullname" placeholder="Nhập fullname" size="50" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="id_username">Username</label>
+            </td>
+            <td>
+                <input type="text" name="username" id="id_username" placeholder="Nhập tên" size="50" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="id_pass">Password</label>
+            </td>
+            <td>
+                <input type="password" name="password" id="id_pass" placeholder="Nhập mật khẩu" size="50" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="id_passConfirm">Nhập lại <br>Password</label>
+            </td>
+            <td>
+                <input type="password" name="passwordConfirm" id="id_passConfirm" placeholder="Nhập lại mật khẩu"
+                    size="50" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Giới tính</label>
+            </td>
+            <td>
+                <label><input type="radio" name="gender" value="Male" />Nam</label>
+                <label><input type="radio" name="gender" value="femail" />Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="id_birthDate">Ngày sinh</label>
+            </td>
+            <td>
+                <label><input type="date" name="birthDate" id="id_birthDate" /></label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="id_address">Địa chỉ</label></td>
+            <td>
+                <textarea name="address" id="id_address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="id_avatar">Avatar</label></td>
+            <td>
+                <input type="file" id="id_avatar" name="Avatar" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Sở thích</label>
+            </td>
+            <td>
+                <label><input type="checkbox" name="hobby" value="movie">Xem phim</label>
+                <label><input type="checkbox" name="hobby" value="sport">Thể thao</label>
+                <label><input type="checkbox" name="hobby" value="Web">Web</label>
+            </td>
+        </tr>
+        <tfood>
+            <tr>
+                <th colspan="2">
+                    <button type="reset" name="reset_btn">Reset</button>
+                    <button type="submit" name="ok_btn">OK</button>
+                </th>
+            </tr>
+        </tfood>
+    </table>
+</body>
+
+</html>
