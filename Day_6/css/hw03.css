@@ -1,0 +1,14 @@
+html{
+    font-size: 62.5%;
+    font-family: Georgia;
+}
+
+h1{
+    color:#BD382E;
+    text-align: center;
+}
+p::first-letter{
+    color: #BD382E;
+    font-size: 2rem;
+    font-weight: 600;
+}

@@ -1,0 +1,20 @@
+.box{
+    font-size: 1.2em;
+}
+
+.content {
+    font-size: 1.1em;
+}
+
+p {
+    color: rgba(81, 13, 45, 0.4);
+    font-size: 1.1em;
+    font-family: "SVN Fontbox";
+    font-style: inherit;
+}
+
+/* Nhúng code font chữ */
+@font-face {
+    font-family: "SVN Fontbox";
+    src: url("../fonts/SVN-Fontbox-Boathouse-Filled.otf");
+}
