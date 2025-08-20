@@ -1,0 +1,56 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 62.5%;
+}
+
+header{
+    text-align: center;
+}
+
+main > div{
+    display: inline-block;
+    width: 28%;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+span{
+    font-weight: 600;
+    color: black;
+}
+
+i, p{
+    color: grey;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+main > div{
+    margin: 0px 2px;
+    text-align: left;
+}
+
+label{
+    background-color: #243a92;
+    color: white;
+    padding: 10px 22px;
+}
+
+label:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+hr{
+    opacity: 10%;
+}

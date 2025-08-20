@@ -1,0 +1,33 @@
+body{
+    background-color: #2f3e4c;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+}
+
+.header{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    border-radius: 5px;
+    background-color: #1f4959;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.header > label{
+    font-size: 90%;
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    color: white;
+    box-sizing:border-box;
+    text-align: center;
+    font-family: Helvetica;
+    padding-top: 6px;
+}
+
+label:hover{
+    background-color: #e84e3e;
+    border-radius: 5px;
+}

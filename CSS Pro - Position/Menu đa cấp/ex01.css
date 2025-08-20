@@ -1,0 +1,39 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, 'Segoe UI' 
+    , Roboto, Helvetica, Arial, sans-serif;
+    background: #333;
+}
+
+.menu > li{
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none; 
+    /* Bỏ gạch chân */
+
+}
+
+.submenu{
+    background-color: beige;
+    position: absolute;
+    left: -20px;
+
+}
+
+.submenu a{
+    box-sizing: border-box;
+    display: block;
+    color: black;
+    display: inline-block;
+    padding: 4px 8px;
+    border-bottom: #333 solid 1px;
+}

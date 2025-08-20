@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+label{
+    background-color: #243a92;
+    padding: 10px 22px;
+    color: white;
+    align-items: center;
+}
+
+label:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+#first{
+    position: relative;
+    width: 70%;
+    margin: 0 15%;
+    text-align: center;
+}
+
+.second:hover{
+    border-radius: 10px;
+    background-color:azure;
+}
+
+#first div {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+}
+
+img{
+    width: 50%;
+    margin-bottom: -15px;
+}
+
+#first p{
+    margin-bottom: 30px;
+    color: #909090;
+}
