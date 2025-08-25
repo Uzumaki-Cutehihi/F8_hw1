@@ -47,3 +47,20 @@ h3{
             font-size: 0.8rem;
  }
 
+ form{
+    display: flex;
+    position: relative;
+ }
+
+ #email-form{
+    border: none;
+    background: none;
+ }
+
+ #submit-button{
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    right: 0px;
+ }
