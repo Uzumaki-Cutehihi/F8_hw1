@@ -1,0 +1,224 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+#banner{
+    background-color: black;
+    color: white;
+    padding: 7px 0px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+
+#banner > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#shop-now-btn{
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#language-btn{
+    position: absolute;
+    right: 20px;
+    top: 27%;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header{
+    background-color: white;
+    padding: 16px 0px;
+    border-bottom: 1px solid rgb(171, 166, 166);
+}
+
+header>div{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+#logo{
+    font-size: 23px;
+    font-weight:600;
+    color: black;
+    margin-left: 70px;
+}
+
+.header-menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: #454242;
+    font-weight: 400;
+    transition: color 0.3s;
+    border-bottom: 1px solid rgb(26, 25, 25);
+}
+
+.header-menu a:hover{
+    font-weight: 600;
+    color: black;
+}
+
+.header-actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search{
+    position: relative;
+}
+
+.search-input{
+    padding: 8px 40px 8px 16px;
+    border: none;
+    background-color: #dfdcdc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.search-btn{
+    position: absolute;
+    right: 12px;
+    top:50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+}
+
+.icon-btn{
+    font-size: 20px;
+    background: none;
+    border: none;
+    padding: 2px;
+}
+
+#main-content{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px 20px;
+    gap: 45px;
+}
+
+#sidebar{
+    width: 220px;
+    margin-left: 75px;
+}
+
+.category-list{
+    list-style: none;
+}
+
+.category-item{
+    padding: 16px 0px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin: -7px 0;;
+}
+
+section{
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: 60px;
+}
+
+#product-img{
+    position: absolute;
+    right: -100px;
+    top: -20px;
+}
+
+#ad-content{
+    color: white;
+}
+
+
+
+#shop-now{
+    position: absolute;
+    left: 40px;
+    bottom: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    position: absolute;
+    left: 40px;
+    top: 130px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.brand{
+    display: flex;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    align-items: center;
+}
+
+#apple-logo{
+    font-size:40px;
+    margin-right: 10px;
+}
+
+.hero-subtitle{
+    font-size: 14px;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(99, 89, 77);
+}
+
+.dot-active{
+    background-color: aquamarine;
+    border: 2px solid white;
+}
+
+#dots{
+    position: absolute;
+    bottom: 12px;
+    left: 45%;
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+

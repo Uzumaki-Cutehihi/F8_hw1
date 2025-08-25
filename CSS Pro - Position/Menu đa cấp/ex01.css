@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  box-sizing: border-box;
+}
 
 body{
     display: flex;
@@ -13,27 +22,54 @@ body{
     display: inline-block;
     margin: 0 12px;
     position: relative;
+    padding-bottom: 20px;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.menu li{
+    position: relative;
 }
 
 .menu a{
     color: #fff;
     text-decoration: none; 
     /* Bỏ gạch chân */
-
 }
 
 .submenu{
     background-color: beige;
     position: absolute;
-    left: -20px;
-
+    left: 0px;
+    width: 120px;
+    display: none;
 }
 
 .submenu a{
-    box-sizing: border-box;
     display: block;
     color: black;
-    display: inline-block;
-    padding: 4px 8px;
-    border-bottom: #333 solid 1px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #333;
+}
+
+.submenu > li:hover{
+    background-color: burlywood;
+    position: relative;
+}
+
+.submenu > li:hover > a{
+    font-weight: 700;
+    color: rgb(67, 19, 19);
+}
+
+.menu > li:hover .submenu{
+    display: block;
+}
+
+.submenu > .submenu{
+    top: 0;
+    left: 100%;
+    display: none;
 }
