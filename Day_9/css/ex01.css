@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    border: 1px red solid;
+}
+
+.box-item{
+    width: 100px;
+    height: 50px;
+    background: green;
+    border: 1px solid white;
+    text-align: center;
+    color: white
+}
+

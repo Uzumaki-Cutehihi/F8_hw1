@@ -53,9 +53,10 @@ article:hover{
 
 img{
     width: 100%;
-    size: cover;
+    height: 50%;
     border-radius: 5px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 h1{

@@ -1,0 +1,45 @@
+body{
+    padding:0px;
+    margin:0px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.layer{
+    position: absolute;
+    width: auto;
+    height: auto;
+    inset:0;
+    background: rgba(133, 124, 124, 0.655);
+    display: none;
+}
+
+.modal{
+    position: relative;
+    background-color: aliceblue;
+    width: 60%;
+    left: 0;
+    right: 0;
+    top: -70px;
+    margin: auto;
+    padding: 30px 20px;
+    display: none;
+}
+
+.x{
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+.check-btn{
+    border: 1px solid black;
+    background-color: grey;
+}
+
+
+#check:checked ~ .modal, #check:checked ~ .layer{
+    display: block;
+    
+}
