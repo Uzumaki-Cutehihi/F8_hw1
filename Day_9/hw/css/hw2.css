@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 80px;
+    font-size: 16px;
+}
+
+
+.highlight{
+    display: flex;
+    align-items: center;
+}
+
+.highlight > span{
+    width: 1rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: rgb(221 68 70);
+}
+
+.highlight > p{
+    color: rgb(221 68 70);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-left: 13px;
+}
+
+.main-header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.main-header > p{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.time{
+    display: flex;
+    position: absolute;
+    left: 17rem;
+    top: 0px;
+}
+
+.time-val{
+    padding: 0px 10px;
+}
+
+.time-val > div{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.time > span{
+    font-size: 2rem;
+    position: relative;
+    top: -25px;
+    color: rgba(200, 82, 84, 0.784);
+}
+
+.time-val > p{
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+
+.header-btn{
+    display: flex;
+}
+
+.header-btn > div{
+    font-weight: 300;
+    background-color: rgba(241, 231, 231, 0.741);
+    border-radius: 50%;
+    padding: 8px;
+    position: relative;
+}
+
+.header-btn > div:nth-child(1){
+    position: absolute;
+    right: -4%;
+    top: 20px;
+}
+
+.header-btn > div:nth-child(2){
+    position: absolute;
+    right: -8%;
+    top: 20px;
+}
+
+.header-btn > div:hover{
+    background-color: rgba(155, 151, 151, 0.741);
+}
+
+main{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    object-fit: cover;
+    width: 15rem;
+    height:13rem;
+    border-radius: 10px;
+}
+
+.item{
+    width: auto;
+    margin: 10px;
+}
+
+.item-img{
+    position: relative;
+}
+
+.item-img > img{
+    z-index: 0;
+}
+
+i.fa-heart {
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    left: 215px;
+    top: 10px;
+}
+
+i.fa-eye {
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    left: 215px;
+    top: 30px;
+}
+
+i.fa-eye:hover , i.fa-heart:hover{
+    background-color: black;
+    color: white;
+}
+
+.item-img > span{
+    background-color: rgb(221 68 70);
+    width: 15%;
+    height: 10%;
+    padding: 5px 35px 5px 10px;
+    font-size: 10px;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    left:5px;
+    top: 5px;
+}
+
+.last-btn{
+    border: none;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.last-btn > label{
+    background-color: rgb(221 68 70);
+    color: white;
+    padding: 15px 35px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.last-btn > label:hover{
+    background-color: rgb(79, 25, 25);
+    color: rgb(207, 40, 40);
+}
+
+.price{
+    margin: 10px 0px;
+}
+
+.new-price{
+    color:rgb(221 68 70);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.old-price{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.rating{
+    font-size: 0.8rem;
+}
+
+.review{
+    color: rgb(143, 138, 138);
+    font-weight: 600;
+}
+
+.title{
+    font-weight: 600;
+}
+
+.fa-star{
+    color: hsl(37.14deg 99.06% 58.43%);
+}
+
+.add{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    bottom: 4px;
+    display: none;
+}
+
+.item > .item-img:hover .add{
+    display: flex;
+}
