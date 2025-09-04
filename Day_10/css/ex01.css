@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  bottom: 0;
+  background: black;
+  color: white;
+  padding: 15px;
+  transition: left 0.3s;
+  z-index: 20;
+}
+
+.menu .menu-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#open {
+  display: none;
+}
+
+#open:checked ~ .menu {
+  left: 0;
+}
+
+#open:checked .layer {
+  display: inline-block;
+}
+
+.layer {
+  inset: 0;
+  /* Kéo dãn full màn hình */
+  visibility: hidden;
+  /* Ẩn thay cho display:none --> Vẫn giữ không gian lưu trữ */
+  position: absolute;
+  background-color: rgba(7, 7, 7, 0.425);
+  z-index: 10;
+  transition-property: opacity, visibility;
+  transition: 0.3s;
+}
+
+#open:checked ~ .layer {
+  opacity: 1;
+  visibility: visible;
+}
