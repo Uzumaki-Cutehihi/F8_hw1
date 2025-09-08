@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/hw.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" id="login" name="tab" hidden checked>
+    <input type="radio" id="register" name="tab" hidden>
+    <main class="container">
+        <section class="left-contents">
+            <h1>WELCOME TO <span class="highlight">CARHUB</span></h1>
+            <p>
+                The next generation social network & community! <br>
+                Connect with your friends and play with our quests <br>
+                and badges gamification system!
+            </p>
+
+            <!-- Buttons -->
+            <!-- <div class="left-btn">
+                <input type="radio" id="login" class="login-left" hidden checked>
+                <label for="login">Login</label>
+
+                <input type="radio" id="register" class="login-left" hidden>
+                <label for="register">Register</label>
+            </div> -->
+
+        </section>
+
+        <!-- <input type="radio" id="login" name="tab" hidden checked>
+        <input type="radio" id="register" name="tab" hidden> -->
+
+        <div class="left-btn">
+            <label for="login" class="flag1">Login</label>
+            <label for="register" class="flag2">Register</label>
+        </div>
+
+        <section class="right-contents right-login">
+            <h2>Account Login</h2>
+            <form action="#">
+                <div class="username-login">
+                    <input id="username-login-input" type="text" required>
+                    <label for="username-login-input">Username</label>
+                </div>
+                <div class="password-login">
+                    <input type="password" id="password-login-input" required>
+                    <label for="password-login-input">Password</label>
+                </div>
+                <span class="options">
+                    <label>
+                        <input type="checkbox" hidden>
+                        <span>Remember Me</span>
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </span>
+
+                <button type="submit" class="btn-submit">Login to your Account</button>
+
+                <p>Login with your Social Account</p>
+                <div class="social-login">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </form>
+        </section>
+
+
+        <section class="right-contents right-register">
+            <h2>Create your account</h2>
+            <form action="#">
+                <div class="email-register">
+                    <input id="email-register-input" type="email" required>
+                    <label for="email-register-input">Your email</label>
+                </div>
+                <div class="username-register">
+                    <input type="text" id="username-register-input" required>
+                    <label for="username-register-input">Username</label>
+                </div>
+                <div class="password-register">
+                    <input type="password" id="password-register-input" required>
+                    <label for="password-register-input">Password</label>
+                </div>
+                <div class="repeat-password">
+                    <input type="password" id="repeat-password-input" required>
+                    <label for="repeat-password-input">Repeat password</label>
+                </div>
+                <span class="options">
+                    <label>
+                        <input type="checkbox" hidden>
+                        <span>Send me news and update my Email</span>
+                    </label>
+                </span>
+
+                <button type="submit" class="btn-submit">Register Now</button>
+
+                <p>You'll receive a confirmation email in your inbox with a link to activate your account. If you have
+                    any problems, <a id="contact">contact us!</a></p>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>

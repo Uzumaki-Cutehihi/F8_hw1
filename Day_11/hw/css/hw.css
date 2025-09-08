@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #8a83ab;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../css/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.left-contents {
+  /* Dãn ra nếu còn chỗ trống */
+  flex: 1;
+  padding: 20px;
+}
+
+.left-contents > h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.highlight {
+  font-size: 40px;
+  color: #ffd93d;
+}
+
+.left-contents > p {
+  margin: 20px 0px;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+.left-btn {
+  margin: 20px 0;
+}
+
+.left-btn label {
+  background-color: transparent;
+  border: 2px solid rgb(100, 95, 95);
+  color: black;
+  padding: 10px 25px;
+  margin-right: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-left:checked + label {
+  background: #ffd93d;
+}
+
+.options label span {
+  font-weight: 700;
+  font-size: small;
+}
+
+.right-contents {
+  flex: 1;
+  background-color: #fff;
+  opacity: 0.98;
+  color: #333;
+  padding: 70px;
+  border-radius: 15px;
+  max-width: 480px;
+  height: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+.right-contents > h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.right-contents > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-contents form div {
+  position: relative;
+}
+
+.right-contents form div input {
+  border: rgba(84, 82, 86, 0.346) 1px solid;
+  padding: 10px 5px;
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 10px;
+  transition-property: border;
+  transition-duration: 0.5s;
+  outline: none;
+  z-index: 0;
+}
+
+.right-contents form div label {
+  position: absolute;
+  z-index: 12;
+  color: rgb(100, 98, 98);
+  font-size: 12px;
+  padding: 0px 2px;
+  transition-property: color;
+  transition: 0.5s;
+  background-color: white;
+  top: 20px;
+  left: 10px;
+}
+
+.right-contents form div input:focus:hover {
+  border: 1px solid rgb(167, 119, 15);
+  box-shadow: 0 0 5px rgba(175, 134, 9, 0.5);
+}
+
+.right-contents form div input:focus ~ label {
+  top: 4px;
+  font-size: 10px;
+}
+
+.right-contents input:focus {
+  border-radius: #4e2cff;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 40px 0;
+  position: relative;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #9e9c18, #140c04);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.btn-submit:hover {
+  opacity: 0.8;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-login a {
+  font-size: 25px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s all;
+}
+
+.social-login a:hover {
+  color: #cbac2e;
+  padding-bottom: 10px;
+}
+
+.right-contents p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Check Remember me */
+
+.options label input + span::before {
+  content: "";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background: white;
+  border: 1px solid black;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.options label input + span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options label input:checked + span::before {
+  content: "✕";
+  background: #b0770e;
+  color: white;
+}
+
+.left-btn {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+#login:checked ~ main .left-btn label[for="login"] {
+  background: orange;
+  color: #fff;
+}
+
+#register:checked ~ main .left-btn label[for="register"] {
+  background: orange;
+  color: #fff;
+}
+
+.right-register {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#login:checked ~ .right-login {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+.right-register {
+  transform: translate(100px, -50%);
+}
+
+#register:checked ~ main .right-register {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+#register:checked ~ main .right-login {
+  transform: translate(-100px, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.left-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+/* Responsive tablet */
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .left-contents {
+    text-align: center;
+    display: block;
+    margin: 50px 0px -50px 0px;
+  }
+
+  .left-contents > p {
+    display: none;
+  }
+
+  .left-contents .highlight {
+    display: block;
+  }
+
+  .left-btn {
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+  }
+}
